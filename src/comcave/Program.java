@@ -2,8 +2,10 @@ package comcave;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.Locale;
 
 public class Program {
 
@@ -27,6 +29,13 @@ public class Program {
 		// Monat beginnt bei 0
 	 	GregorianCalendar gc = new GregorianCalendar(2021, 8, 13);
 	    System.out.println(gc.getTime());
+	    System.out.println("Tag: " + gc.get(Calendar.DAY_OF_MONTH) );
+	    System.out.println("Wochentag-Nr.: " + gc.get(Calendar.DAY_OF_WEEK));
+	    System.out.println("Wochentag Name: " +gc.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.LONG_FORMAT, Locale.getDefault()));
+	    System.out.println("Monat- Nr.: " + gc.get(Calendar.MONTH)); 
+	    System.out.println("Jahr: " + gc.get(Calendar.YEAR));
+	    
+	
 	}
 
 }
