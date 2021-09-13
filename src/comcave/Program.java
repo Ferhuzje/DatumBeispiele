@@ -43,6 +43,18 @@ public class Program {
 	    GregorianCalendar gc2 = new GregorianCalendar(2022, 2, 1);
 	    gc2.add(Calendar.DAY_OF_MONTH, -1);
 	    System.out.println(gc2.getTime() );
+	    System.out.println( gc2.getTime());
+	    System.out.println(gc2.after(gc) ); // Vergleich von 2 Datumsobjekten
+	    System.out.println(gc2.before(gc));
+	    
+	    //Volljaehrig?
+	    GregorianCalendar gcGeburtsdatum = new GregorianCalendar(2004, 7, 12);
+	    GregorianCalendar gcHeute = new GregorianCalendar();
+	    gcHeute.add(Calendar.YEAR, -18);
+	    System.out.println("Volljährig: " + gcGeburtsdatum.before(gcHeute) );
+	    
+	    
+	    
 	    
 	
 	}
