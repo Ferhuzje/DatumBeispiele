@@ -47,7 +47,7 @@ public class Program {
 	    System.out.println(gc2.after(gc) ); // Vergleich von 2 Datumsobjekten
 	    System.out.println(gc2.before(gc));
 	    
-	    //Volljaehrig?
+	    //Volljaehrig ?
 	    GregorianCalendar gcGeburtsdatum = new GregorianCalendar(2004, 7, 12);
 	    GregorianCalendar gcHeute = new GregorianCalendar();
 	    gcHeute.add(Calendar.YEAR, -18);
