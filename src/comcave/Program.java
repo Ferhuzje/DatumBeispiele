@@ -35,6 +35,15 @@ public class Program {
 	    System.out.println("Monat- Nr.: " + gc.get(Calendar.MONTH)); 
 	    System.out.println("Jahr: " + gc.get(Calendar.YEAR));
 	    
+	    //Datum Werte aufaddieren oder subtrahieren 
+	    gc.add(Calendar.DAY_OF_MONTH, -10);
+	    
+	    
+	    //Letzter Tag im Februar naechsten Jahres
+	    GregorianCalendar gc2 = new GregorianCalendar(2022, 2, 1);
+	    gc2.add(Calendar.DAY_OF_MONTH, -1);
+	    System.out.println(gc2.getTime() );
+	    
 	
 	}
 
