@@ -3,6 +3,7 @@ package comcave;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class Program {
 
@@ -23,7 +24,9 @@ public class Program {
 		DateFormat dateFormatDB = new SimpleDateFormat("yyy-MM-dd");
 		System.out.println(dateFormatDB.format(datum2));
 		
-	 //	GregorianCalender
+		// Monat beginnt bei 0
+	 	GregorianCalendar gc = new GregorianCalendar(2021, 8, 13);
+	    System.out.println(gc.getTime());
 	}
 
 }
